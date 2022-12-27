@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1a1a1a;
+  color: white;
+  /* border-bottom: 0.5px solid gray; */
+  font-weight: 700;
+  height: 5rem;
+}
+
+.nav-link {
+  padding: 20px;
+  padding-bottom: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.nav-link-active {
+  color: #8f76c2;
+}
