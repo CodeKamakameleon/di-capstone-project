@@ -25,13 +25,13 @@ export const Carousel = ({ children }) => {
       </div>
 
       <div className="indicators">
-        <button
+        {/* <button
           onClick={() => {
             updateIndex(activeIndex - 1);
           }}
         >
           Prev
-        </button>
+        </button> */}
 
         {React.Children.map(children, (child, index) => {
           return (
@@ -46,13 +46,13 @@ export const Carousel = ({ children }) => {
           );
         })}
 
-        <button
+        {/* <button
           onClick={() => {
             updateIndex(activeIndex + 1);
           }}
         >
           Next
-        </button>
+        </button> */}
       </div>
     </div>
   );

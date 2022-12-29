@@ -1,4 +1,4 @@
-import { Children } from "react";
+// import { Children } from "react";
 
 export const CarouselItem = ({ children, width }) => {
   return (

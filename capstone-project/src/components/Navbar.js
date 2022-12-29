@@ -1,13 +1,17 @@
 import { Link, NavLink } from "react-router-dom";
 import { Burger } from "./Burger";
 import clsx from "clsx";
+import { useState } from "react";
+import { Dropdown } from "./Dropdown";
 
 export const Navbar = () => {
+  const [dropdown, setDropdown] = useState(false);
+
   return (
     <nav className="nav-container">
       <div className="navbar">
         <div className="title-header">
-          <Link className="title" to="/home">
+          <Link className="title" to="/">
             Pihanaka`ikena o Kaua`i
           </Link>
         </div>
@@ -17,18 +21,38 @@ export const Navbar = () => {
             className={({ isActive }) =>
               clsx("nav-link", { "nav-link-active": isActive })
             }
-            to="/home"
+            to="/"
           >
             HOME
           </NavLink>
-          <NavLink
-            className={({ isActive }) =>
-              clsx("nav-link", { "nav-link-active": isActive })
-            }
-            to="/about"
-          >
-            ABOUT
-          </NavLink>
+
+          <div className="dropdown">
+            <NavLink
+              className={({ isActive }) =>
+                clsx("nav-link", { "nav-link-active": isActive })
+              }
+              to="/about"
+            >
+              ABOUT
+            </NavLink>
+
+            <Link
+              className="submenu-item"
+              to="/kupuna"
+              onClick={() => setDropdown(false)}
+            >
+              KUPUNA
+            </Link>
+
+            <Link
+              className="submenu-item"
+              to="/gallery"
+              onClick={() => setDropdown(false)}
+            >
+              GALLERY
+            </Link>
+          </div>
+
           <NavLink
             className={({ isActive }) =>
               clsx("nav-link", { "nav-link-active": isActive })

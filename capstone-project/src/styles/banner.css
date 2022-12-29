@@ -18,19 +18,21 @@
   width: 100%;
   height: 17rem;
   margin: 0;
-  padding-top: 110px;
-  z-index: 0;
+  padding-top: 38px;
+  padding-bottom: 40px;
+  /* z-index: 0; */
 
   /* background-image: url("../images/website-banner.mp4"); */
 }
 
 .item-body {
-  display: block;
-  /* flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  justify-content: center; */
-  width: 60%;
+  justify-content: center;
+  width: 80%;
+  /* height: 10rem; */
   padding: 20px;
 }
 
@@ -46,7 +48,7 @@
   height: 20rem;
   margin: 0;
   padding-top: 108px;
-
+  /* z-index: 0; */
   /* padding-top: 120px; */
 }
 

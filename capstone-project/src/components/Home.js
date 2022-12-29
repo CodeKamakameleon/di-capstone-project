@@ -24,7 +24,7 @@ export const Home = () => {
         <div className="section-1-right">
           <iframe
             width="450"
-            height="325"
+            height="305"
             src="https://www.youtube.com/embed/CgVrCkRdbK4"
             title="YouTube video player"
             // frameborder="0"

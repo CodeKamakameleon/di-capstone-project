@@ -1,36 +1,38 @@
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
+import aboutPic from "../images/kahili-banner.png";
 
 export const About = () => {
   return (
-    <div>
+    <div className="about-page">
       <Navbar />
-      <header>ABOUT US</header>
+      <header className="page-header">ABOUT US</header>
       {/* Group picture */}
+      <img className="about-pic" src={aboutPic} alt="aboutPic" />
 
-      <h3>Our Board</h3>
+      <h3 className="section-header">Our Board</h3>
 
       <div className="board-section">
         <img />
-        <h5>President</h5>
+        <h4>President</h4>
         <p>Sean Chun</p>
       </div>
 
       <div className="board-section">
         <img />
-        <h5>Vice President</h5>
+        <h4>Vice President</h4>
         <p>Maco Wai`ale`ale</p>
       </div>
 
       <div className="board-section">
         <img />
-        <h5>Treasurer</h5>
+        <h4>Treasurer</h4>
         <p>Anna Peters</p>
       </div>
 
       <div className="board-section">
         <img />
-        <h5>Secretary</h5>
+        <h4>Secretary</h4>
         <p>Susan Oshiro-Taogoshi</p>
       </div>
 
