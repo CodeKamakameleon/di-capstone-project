@@ -6,17 +6,45 @@
   background-color: #1a1a1a;
   color: white;
   /* border-bottom: 0.5px solid gray; */
-  font-weight: 700;
+
   height: 5rem;
+  width: 100%;
 }
 
 .nav-link {
   padding: 20px;
   padding-bottom: 30px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #d3d3d3;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-link-active {
   color: #8f76c2;
+}
+
+.title-header {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.title {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-desktop {
+    display: none;
+  }
 }

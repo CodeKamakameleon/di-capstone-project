@@ -1,6 +1,10 @@
+import { Footer } from "./Footer";
+import { Navbar } from "./Navbar";
+
 export const About = () => {
   return (
     <div>
+      <Navbar />
       <header>ABOUT US</header>
       {/* Group picture */}
 
@@ -29,6 +33,8 @@ export const About = () => {
         <h5>Secretary</h5>
         <p>Susan Oshiro-Taogoshi</p>
       </div>
+
+      <Footer />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { Hamburger } from "./Hamburger";
+import { Burger } from "./Burger";
 import clsx from "clsx";
 
 export const Navbar = () => {
@@ -55,7 +55,7 @@ export const Navbar = () => {
           </NavLink>
         </div>
 
-        <Hamburger />
+        <Burger />
       </div>
     </nav>
   );

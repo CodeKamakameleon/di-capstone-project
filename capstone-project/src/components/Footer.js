@@ -3,14 +3,14 @@ import { Link, NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <div>
+    <footer className="footer">
       <div className="title-header">
         <Link className="title" to="/home">
           Pihanaka`ikena o Kaua`i
         </Link>
       </div>
 
-      <div className="nav-desktop">
+      <div className="footer-links">
         <NavLink
           className={({ isActive }) =>
             clsx("nav-link", { "nav-link-active": isActive })
@@ -53,7 +53,7 @@ export const Footer = () => {
         </NavLink>
       </div>
 
-      <div>Made by Dev-Island</div>
-    </div>
+      <div className="footer-made">Made by Dev-Island</div>
+    </footer>
   );
 };

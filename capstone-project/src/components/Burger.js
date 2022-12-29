@@ -1,14 +1,16 @@
 import clsx from "clsx";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { Twirl as Hamburger } from "hamburger-react";
 
-export const Hamburger = () => {
+export const Burger = () => {
   const [isOpen, setOpen] = useState(false);
+
   return (
     <div className="hamburger">
       <Hamburger toggled={isOpen} toggle={setOpen} />
 
-      <div className="nav-desktop">
+      <div className={clsx(`mbl-nav ${isOpen ? "page-burger-open" : ""}`)}>
         <NavLink
           className={({ isActive }) =>
             clsx("nav-link", { "nav-link-active": isActive })

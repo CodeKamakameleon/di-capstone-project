@@ -1,5 +1,9 @@
 @import url("navbar.css");
 @import url("banner.css");
+@import url("burger.css");
+@import url("home.css");
+@import url("footer.css");
+@import url("carousel.css");
 
 * {
   font-family: "Outfit", sans-serif;

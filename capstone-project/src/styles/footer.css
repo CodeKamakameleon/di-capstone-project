@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  margin-top: 20px;
+  /* align-self: baseline; */
+}
+
+.footer-made {
+  display: flex;
+  color: gray;
+  width: 250px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-made {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
