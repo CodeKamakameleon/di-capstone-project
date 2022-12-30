@@ -15,7 +15,7 @@ export const Burger = () => {
           className={({ isActive }) =>
             clsx("nav-link", { "nav-link-active": isActive })
           }
-          to="/home"
+          to="/"
         >
           HOME
         </NavLink>

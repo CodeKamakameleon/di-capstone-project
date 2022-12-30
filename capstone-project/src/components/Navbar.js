@@ -1,12 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import { Burger } from "./Burger";
 import clsx from "clsx";
-import { useState } from "react";
-import { Dropdown } from "./Dropdown";
+// import { useState } from "react";
+// import { Dropdown } from "./Dropdown";
 
 export const Navbar = () => {
-  const [dropdown, setDropdown] = useState(false);
-
+  // const [dropdown, setDropdown] = useState(false);
   return (
     <nav className="nav-container">
       <div className="navbar">
@@ -29,28 +28,25 @@ export const Navbar = () => {
           <div className="dropdown">
             <NavLink
               className={({ isActive }) =>
-                clsx("nav-link", { "nav-link-active": isActive })
+                clsx("dropdown-btn", {
+                  "nav-link-active": isActive,
+                })
               }
+              // onMouseOver={() => setDropdown(true)}
               to="/about"
             >
               ABOUT
             </NavLink>
 
-            <Link
-              className="submenu-item"
-              to="/kupuna"
-              onClick={() => setDropdown(false)}
-            >
-              KUPUNA
-            </Link>
+            <div className="dropdown-content">
+              <Link className="submenu-item" to="/kupuna">
+                KUPUNA
+              </Link>
 
-            <Link
-              className="submenu-item"
-              to="/gallery"
-              onClick={() => setDropdown(false)}
-            >
-              GALLERY
-            </Link>
+              <Link className="submenu-item" to="/gallery">
+                GALLERY
+              </Link>
+            </div>
           </div>
 
           <NavLink
