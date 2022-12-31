@@ -35,6 +35,14 @@
   border-radius: 3px;
 }
 
+.arrow {
+  margin: 5px;
+  opacity: 0.8;
+  z-index: 1;
+  border: none;
+  background-color: gray;
+}
+
 .indicators > button.active {
   background-color: blueviolet;
   color: white;
